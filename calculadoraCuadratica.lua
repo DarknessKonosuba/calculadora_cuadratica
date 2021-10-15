@@ -1,25 +1,3 @@
--- Signo	Descripcion
---   +	    Para sumar
---   –	    Para restar
---   *	    Para multiplicacion
---   /	    Para division
---   ^	    Para exponenciacion
---   %	    Devuelve el modulo o el resto de una division
---   –	    Se usa para negacion
-
--- En el caso de hacer x^0.5 nos calculara la raiz cuadrada de x,
--- o si usamos x^(1/3) nos calculara la raiz cubica de x, 
--- para argumentos de tipo entero podemos decir que siempre tiene el mismo significado
--- con el resultado, este siempre tendra el mismo signo que el segundo argumento, para
--- argumentos de tipo real tiene algunos usos extra, por ejemplo
--- x%1 es la parte fraccional de x en cambio x-x%1 es la parte entera de x,
--- lo mismo con x-x%0.01 porque eliminamos los ultimos dos digitos, el signo 
--- modulo esta definido por la siguiente regla:
-
--- a%b == a - floor(a/b)*b
--- Donde decimos que obtener el modulo de la division de a y b es igual a menos
--- el valor entero de la division de a y b multiplicado por b, una cosa equivale a la otra.
-
 -- CALCULADORA CUADRATICA
 function calculadora(a,b,c)
     repeat
